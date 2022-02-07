@@ -1,0 +1,37 @@
+
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+h1 {
+	font-size: 300%;
+	
+	}
+
+.wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    }
+
+.wrapper .ColorBlock1{
+    width: 45%;
+    height: 50%;
+    background-color: #fd1d1d;
+	border-style: dashed;
+	border-color: transparent;
+	border-radius: 15px;
+}
+
+.wrapper .ColorBlock2{
+    width: 45%;
+    height: 50%;
+    background-color: #2835ee;
+	border-style: dashed;
+	border-color: transparent;
+	border-radius: 15px;
+}
