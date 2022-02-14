@@ -18,15 +18,16 @@ h1 {
 
 .wrapper{
         display: flex;
-        flex-direction: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content:center;
         align-items:center;
         width: 66%;
 }
 
 .wrapper .ColorRed{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
     background-color: #fd1d1d;
 	border-style: dashed;
@@ -35,8 +36,8 @@ h1 {
 }
 
 .wrapper .ColorBlue{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
     background-color: #2835ee;
 	border-style: dashed;
@@ -45,8 +46,8 @@ h1 {
 }
 
 .wrapper .ColorGreen{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
     background-color: #059100;
 	border-style: dashed;
@@ -55,8 +56,8 @@ h1 {
 }
 
 .wrapper .ColorYellow{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
     background-color: #f4f81d;
 	border-style: dashed;
@@ -65,8 +66,8 @@ h1 {
 }
 
 .wrapper .ColorOrange{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
     background-color: #ffa126;
 	border-style: dashed;
@@ -75,12 +76,26 @@ h1 {
 }
 
 .wrapper .ColorPurple{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
-    background-color: #7d00e4;
+    background-color: #6115a8;
 	border-style: dashed;
 	border-color: transparent;
 	border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    width: 33%;
+}
+
+img{
+    height:152px;
+    width:152px;
 }
 
