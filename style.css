@@ -15,6 +15,12 @@ h1 {
     position: center;
 }
 
+.GameBox{
+    display:flex;
+    flex-direction: row;
+
+}
+
 
 .wrapper{
         display: flex;
