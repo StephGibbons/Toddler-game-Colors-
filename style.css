@@ -7,31 +7,80 @@ body{
 }
 
 h1 {
-	font-size: 300%;
-	
-	}
+    size: 300%;
+    text-align: center;
+}
+
+.center{
+    position: center;
+}
+
 
 .wrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: row wrap;
         justify-content:center;
         align-items:center;
-    }
+        width: 66%;
+}
 
-.wrapper .ColorBlock1{
-    width: 45%;
-    height: 50%;
+.wrapper .ColorRed{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
     background-color: #fd1d1d;
 	border-style: dashed;
 	border-color: transparent;
 	border-radius: 15px;
 }
 
-.wrapper .ColorBlock2{
-    width: 45%;
-    height: 50%;
+.wrapper .ColorBlue{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
     background-color: #2835ee;
 	border-style: dashed;
 	border-color: transparent;
 	border-radius: 15px;
 }
+
+.wrapper .ColorGreen{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    background-color: #059100;
+	border-style: dashed;
+	border-color: transparent;
+	border-radius: 15px;
+}
+
+.wrapper .ColorYellow{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    background-color: #f4f81d;
+	border-style: dashed;
+	border-color: transparent;
+	border-radius: 15px;
+}
+
+.wrapper .ColorOrange{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    background-color: #ffa126;
+	border-style: dashed;
+	border-color: transparent;
+	border-radius: 15px;
+}
+
+.wrapper .ColorPurple{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    background-color: #7d00e4;
+	border-style: dashed;
+	border-color: transparent;
+	border-radius: 15px;
+}
+
