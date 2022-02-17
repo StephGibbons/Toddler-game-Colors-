@@ -16,32 +16,31 @@
 
 	<h1>Color Matching Level 5</h1>
 
-	<script id = "dragdrop.js"></script>
-
 	<div class="GameBox">
 
 	<div class="wrapper">
 
-		<div class="ColorPurple" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<div class="ColorBlue" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<div class="ColorGreen" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<div class="ColorYellow" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<div class="ColorOrange" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<div class="ColorRed" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div class="ColorPurple"></div>
+		<div class="ColorBlue"></div>
+		<div class="ColorGreen"></div>
+		<div class="ColorYellow"></div>
+		<div class="ColorOrange"></div>
+		<div class="ColorRed"></div>
 
 	</div>
 
 	<div class="container"> 
-		<img id="Purple" src="Images/PurpleCircle.png" draggable="true" ondragstart="drag(event)">
-		<img id="Blue" src="Images/BlueCircle.png" draggable="true" ondragstart="drag(event)">
-		<img id="Green" src="Images/GreenCircle.png" draggable="true" ondragstart="drag(event)">
-		<img id="Yellow" src="Images/YellowCircle.png" draggable="true" ondragstart="drag(event)">
-		<img id="Orange" src="Images/OrangeCircle.png" draggable="true" ondragstart="drag(event)">
-		<img id="Red" src="Images/RedCircle.png" draggable="true" ondragstart="drag(event)">
+		<img class="circles" src="Images/PurpleCircle.png" draggable="true">
+		<img class="circles" src="Images/BlueCircle.png" draggable="true">
+		<img class="circles" src="Images/GreenCircle.png" draggable="true">
+		<img class="circles" src="Images/YellowCircle.png" draggable="true">
+		<img class="circles" src="Images/OrangeCircle.png" draggable="true">
+		<img class="circles" src="Images/RedCircle.png" draggable="true">
 
 	</div>
-
 	</div>
+
+	<script src = "dragdrop.js"></script>
 
 </body>
 
