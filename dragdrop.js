@@ -1,17 +1,28 @@
 
-const coloredCircles = document.querySelectorAll('.circles');
-const coloredBlocks = document.querySelectorAll('.ColorBlue',".ColorPurple",'.ColorYellow','.ColorOrange','.ColorRed','.ColorGreen');
+const circle = document.querySelector('.circle');
+const coloredBlocks = document.querySelector('.ColorBlue','.ColorPurple','.ColorYellow','.ColorOrange','.ColorRed','.ColorGreen');
 
-//Circle Listners
-coloredCircles.addEventListener('dragstart', dragStart);
-coloredCircles.addEventListener('dragend', dragEnd);
+//Circle Listeners
+circle.addEventListener('dragstart', dragStart);
+circle.addEventListener('dragend', dragEnd);
+
+//Colorblock Listeners
+
+
+
+
 
 //Drag Functions
-
 function dragStart(){
-    setTimeout(()=>(this.className='invisible',0));
+    this.className += ' hold';
+    setTimeout(()=>(this.className = 'invisible'),0)
 }
 
 function dragEnd(){
-    console.long('end');
+    this.className = 'fill';
 } 
+
+
+
+
+

@@ -103,14 +103,18 @@ h1 {
     width: 33%;
 }
 
-.circles{
+.circle{
     height:152px;
     width:152px;
-    margin:10px;
+    margin:20px;
+}
+
+.hold{
+    border:#000000;
 }
 
 .hover {
- border:#000000;
+    border:#000000;
 }
 
 .invisible{
