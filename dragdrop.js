@@ -1,6 +1,6 @@
 
 const circle = document.querySelector('.circle');
-const coloredBlocks = document.querySelector('.ColorBlue','.ColorPurple','.ColorYellow','.ColorOrange','.ColorRed','.ColorGreen');
+const coloredBlocks = document.querySelector('.ColorPurple');
 
 //Circle Listeners
 circle.addEventListener('dragstart', dragStart);
@@ -9,6 +9,10 @@ circle.addEventListener('dragend', dragEnd);
 //Colorblock Listeners
 
 
+    coloredBlocks.addEventListener('dragover', dragOver);
+    coloredBlocks.addEventListener('dragenter', dragEnter);
+    coloredBlocks.addEventListener('dragleave', dragLeave);
+    coloredBlocks.addEventListener('drop', dragDrop);
 
 
 
@@ -19,8 +23,27 @@ function dragStart(){
 }
 
 function dragEnd(){
-    this.className = 'fill';
+    this.className = 'circle';
 } 
+
+function dragOver(e){
+    e.preventDefault();
+}
+
+function dragEnter(e){
+    e.preventDefault();
+    this.className += ' hover';
+}
+
+function dragLeave(){
+    this.className = 'ColorPurple';
+}
+
+function dragDrop(){
+    this.className = 'ColorPurple';
+    this.append(circle);
+}
+
 
 
 
