@@ -17,8 +17,10 @@ const redBlock = document.querySelector('.ColorRed');
 //Circle Listeners
 
 //purple
+if(itemid === "circlepurple"){
     circlepurple.addEventListener('dragstart', dragStart);
     circlepurple.addEventListener('dragend', dragEnd);
+}
 //blue
     circleblue.addEventListener('dragstart', dragStart);
     circleblue.addEventListener('dragend', dragEnd);
