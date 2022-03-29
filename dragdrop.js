@@ -45,6 +45,7 @@ const redBlock = document.querySelector('.ColorRed');
     purpleBlock.addEventListener('dragenter', dragEnter);
     purpleBlock.addEventListener('dragleave', dragLeave);
     purpleBlock.addEventListener('drop', dragDrop);
+   
 //blue
     blueBlock.addEventListener('dragover', dragOver);
     blueBlock.addEventListener('dragenter', dragEnter);
@@ -73,10 +74,14 @@ const redBlock = document.querySelector('.ColorRed');
     redBlock.addEventListener('drop', dragDropRed); 
 
 
+
+
+
 //Drag Functions
 function dragStart(){
     this.className += ' hold';
-    setTimeout(()=>(this.className = 'invisible'),0)
+    setTimeout(()=>(this.className = 'invisible'),0);
+    e.dataTransfer.setData("Text", e.target.id);
 }
 
 function dragEnd(){
@@ -95,14 +100,19 @@ function dragEnter(e){
 //colorspecificfunctions
 
 //purple
+
+
+
 function dragLeave(){
     this.className = 'ColorPurple';
 }
 
 function dragDrop(){
-    if(circlepurple = dragOver){
+    if(mouseOver = "purpleBlock"){
+        if(target.id == "circlePurple"){
     this.className = 'ColorPurple';
     this.append(circlepurple);  
+        }
     }  
 }
 //blue
