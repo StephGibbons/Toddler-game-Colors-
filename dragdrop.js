@@ -14,13 +14,13 @@ const redBlock = document.querySelector('.ColorRed');
 
 
 
+
+
 //Circle Listeners
 
 //purple
-if(itemid === "circlepurple"){
     circlepurple.addEventListener('dragstart', dragStart);
     circlepurple.addEventListener('dragend', dragEnd);
-}
 //blue
     circleblue.addEventListener('dragstart', dragStart);
     circleblue.addEventListener('dragend', dragEnd);
@@ -100,10 +100,11 @@ function dragLeave(){
 }
 
 function dragDrop(){
+    if(circlepurple = dragOver){
     this.className = 'ColorPurple';
-    this.append(circlepurple);
+    this.append(circlepurple);  
+    }  
 }
-
 //blue
 function dragLeaveBlue(){
     this.className = 'ColorBlue';
@@ -130,8 +131,10 @@ function dragLeaveYellow(){
 }
 
 function dragDropYellow(){
-    this.className = 'ColorYellow';
-    this.append(circleyellow);
+    if (target.className =="ColorYellow"){
+        this.className = 'ColorYellow';
+        this.append(circleyellow);
+    }
 }
 
 //orange
