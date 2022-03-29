@@ -131,10 +131,8 @@ function dragLeaveYellow(){
 }
 
 function dragDropYellow(){
-    if (target.className =="ColorYellow"){
-        this.className = 'ColorYellow';
-        this.append(circleyellow);
-    }
+    this.className = 'ColorYellow';
+    this.append(circleyellow);
 }
 
 //orange
