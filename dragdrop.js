@@ -136,7 +136,7 @@ function dragLeaveGreen(){
     this.className = 'ColorGreen';
 }
 
-function dragDropGreen(){
+function dragDropGreen(e){
     if(mouseOver = "greenBlock"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circlegreen"){
@@ -151,7 +151,7 @@ function dragLeaveYellow(){
     this.className = 'ColorYellow';
 }
 
-function dragDropYellow(){
+function dragDropYellow(e){
     if(mouseOver = "yellowBlock"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circleyellow"){
@@ -166,7 +166,7 @@ function dragLeaveOrange(){
     this.className = 'ColorOrange';
 }
 
-function dragDropOrange(){
+function dragDropOrange(e){
     if(mouseOver = "orangeBlock"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circleorange"){
@@ -182,7 +182,7 @@ function dragLeaveRed(){
     this.className = 'ColorRed';
 }
 
-function dragDropRed(){
+function dragDropRed(e){
     if(mouseOver = "redBlock"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circlered"){
