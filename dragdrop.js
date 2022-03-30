@@ -78,7 +78,7 @@ const redBlock = document.querySelector('.ColorRed');
 
 
 //Drag Functions
-function dragStart(){
+function dragStart(e){
     this.className += ' hold';
     setTimeout(()=>(this.className = 'invisible'),0);
     e.dataTransfer.setData("id", e.target.id);
@@ -109,7 +109,8 @@ function dragLeave(){
 
 function dragDrop(){
     if(mouseOver = "purpleBlock"){
-        if(element.id == "circlepurple"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "circlepurple"){
     this.className = 'ColorPurple';
     this.append(circlepurple);  
         }
