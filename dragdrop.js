@@ -152,8 +152,13 @@ function dragLeaveYellow(){
 }
 
 function dragDropYellow(){
+    if(mouseOver = "yellowBlock"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "circleyellow"){
     this.className = 'ColorYellow';
-    this.append(circleyellow);
+    this.append(circleyellow);  
+        }
+    }
 }
 
 //orange
@@ -162,8 +167,13 @@ function dragLeaveOrange(){
 }
 
 function dragDropOrange(){
+    if(mouseOver = "orangeBlock"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "circleorange"){
     this.className = 'ColorOrange';
-    this.append(circleorange);
+    this.append(circleorange);  
+        }
+    }
 }
 
 
@@ -173,8 +183,13 @@ function dragLeaveRed(){
 }
 
 function dragDropRed(){
+    if(mouseOver = "redBlock"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "circlered"){
     this.className = 'ColorRed';
-    this.append(circlered);
+    this.append(circlered);  
+        }
+    }
 }
 
 

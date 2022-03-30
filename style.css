@@ -19,7 +19,6 @@ h1 {
 .GameBox{
     display:flex;
     flex-direction: row;
-    border: dashed;
 }
 
 .wrapper{
