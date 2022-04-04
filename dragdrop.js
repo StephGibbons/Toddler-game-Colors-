@@ -178,7 +178,6 @@ function dragDropOrange(e){
     }
 }
 
-
 //red
 function dragLeaveRed(){
     this.className = 'ColorRed';
