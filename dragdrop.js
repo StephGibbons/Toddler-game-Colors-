@@ -194,9 +194,6 @@ function dragDropRed(e){
 }
 
 
-// Level 2
-
-
 
 
 
