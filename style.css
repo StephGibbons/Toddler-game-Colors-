@@ -16,10 +16,6 @@ h1 {
     position: center;
 }
 
-.GameBox{
-    display:flex;
-    flex-direction: row;
-}
 
 .wrapper{
     width: 66%;
@@ -122,8 +118,27 @@ h1 {
 }
 
 .shapes{
-    height:181px;
-    width:179px;
-    margin:20px;
+    height:200px;
+    width:200px;
+    margin:10px;
 }
 
+.levelTwoWrapper{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    margin-top: 75px;
+    margin-bottom: 100px ;
+
+}
+
+.levelTwoContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}

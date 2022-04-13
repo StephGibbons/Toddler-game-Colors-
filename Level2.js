@@ -1,16 +1,16 @@
-const square = document.getElementById('Square');
-const circle = document.getElementById('Circle');
-const star = document.getElementById('Star');
-const triangle = document.getElementById('Triangle');
-const heart = document.getElementById('Heart');
-const pentagon = document.getElementById('Pentagon');
+const square = document.getElementById('square');
+const circle = document.getElementById('circle');
+const star = document.getElementById('star');
+const triangle = document.getElementById('triangle');
+const heart = document.getElementById('heart');
+const pentagon = document.getElementById('pentagon');
 
-const heartOutline = document.querySelector('HeartOutline');
-const circleOutline = document.querySelector('CircleOutline');
-const squareOutline = document.querySelector('SquareOutline');
-const triangleOutline = document.querySelector('TriangleOutline');
-const starOutline = document.querySelector('StarOutline');
-const pentagonOutline = document.querySelector('PentagonOutline');
+const heartOutline = document.getElementById('heartOutline');
+const circleOutline = document.getElementById('circleOutline');
+const squareOutline = document.getElementById('squareOutline');
+const triangleOutline = document.getElementById('triangleOutline');
+const starOutline = document.getElementById('starOutline');
+const pentagonOutline = document.getElementById('pentagonOutline');
 
 
 
@@ -41,10 +41,10 @@ const pentagonOutline = document.querySelector('PentagonOutline');
 //Colorblock Listeners
 
 //purple
-    heartoutline.addEventListener('dragover', dragOver);
-    heartoutline.addEventListener('dragenter', dragEnter);
-    heartoutline.addEventListener('dragleave', dragLeave);
-    heartoutline.addEventListener('drop', dragDrop);
+    heartOutline.addEventListener('dragover', dragOver);
+    heartOutline.addEventListener('dragenter', dragEnter);
+    heartOutline.addEventListener('dragleave', dragLeave);
+    heartOutline.addEventListener('drop', dragDrop);
    
 //blue
     circleOutline.addEventListener('dragover', dragOver);
@@ -85,7 +85,7 @@ function dragStart(e){
 }
 
 function dragEnd(){
-    this.className = 'circle';
+    this.className = 'shape';
 } 
 
 function dragOver(e){
@@ -104,14 +104,14 @@ function dragEnter(e){
 
 
 function dragLeave(){
-    this.className = 'ColorPurple';
+    this.elementName = 'heartOutline';
 }
 
 function dragDrop(e){
-    if(mouseOver = "heartoutline"){
+    if(mouseOver = "heartOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circlepurple"){
-    this.className = 'ColorPurple';
+        if(elementId === "heart"){
+    this.className = 'heartOutline';
     this.append(square);  
         }
     }  
