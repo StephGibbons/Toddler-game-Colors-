@@ -1,16 +1,16 @@
-const circlepurple = document.getElementById('Square');
-const circleblue = document.getElementById('Circle');
-const circlered = document.getElementById('Star');
-const circleorange = document.getElementById('Triangle');
-const circlegreen = document.getElementById('Heart');
-const circleyellow = document.getElementById('Pentagon');
+const square = document.getElementById('Square');
+const circle = document.getElementById('Circle');
+const star = document.getElementById('Star');
+const triangle = document.getElementById('Triangle');
+const heart = document.getElementById('Heart');
+const pentagon = document.getElementById('Pentagon');
 
-const purpleBlock = document.querySelector('HeartOutline');
-const blueBlock = document.querySelector('CircleOutline');
-const greenBlock = document.querySelector('SquareOutline');
-const yellowBlock = document.querySelector('TriangleOutline');
-const orangeBlock = document.querySelector('StarOutline');
-const redBlock = document.querySelector('PentagonOutline');
+const heartOutline = document.querySelector('HeartOutline');
+const circleOutline = document.querySelector('CircleOutline');
+const squareOutline = document.querySelector('SquareOutline');
+const triangleOutline = document.querySelector('TriangleOutline');
+const starOutline = document.querySelector('StarOutline');
+const pentagonOutline = document.querySelector('PentagonOutline');
 
 
 
@@ -19,59 +19,59 @@ const redBlock = document.querySelector('PentagonOutline');
 //Circle Listeners
 
 //purple
-    circlepurple.addEventListener('dragstart', dragStart);
-    circlepurple.addEventListener('dragend', dragEnd);
+    square.addEventListener('dragstart', dragStart);
+    square.addEventListener('dragend', dragEnd);
 //blue
-    circleblue.addEventListener('dragstart', dragStart);
-    circleblue.addEventListener('dragend', dragEnd);
+    circle.addEventListener('dragstart', dragStart);
+    circle.addEventListener('dragend', dragEnd);
 //green
-    circlegreen.addEventListener('dragstart', dragStart);
-    circlegreen.addEventListener('dragend', dragEnd);
+    heart.addEventListener('dragstart', dragStart);
+    heart.addEventListener('dragend', dragEnd);
 //yellow
-    circleyellow.addEventListener('dragstart', dragStart);
-    circleyellow.addEventListener('dragend', dragEnd);
+    pentagon.addEventListener('dragstart', dragStart);
+    pentagon.addEventListener('dragend', dragEnd);
 //orange
-    circleorange.addEventListener('dragstart', dragStart);
-    circleorange.addEventListener('dragend', dragEnd);
+    triangle.addEventListener('dragstart', dragStart);
+    triangle.addEventListener('dragend', dragEnd);
 //red
-    circlered.addEventListener('dragstart', dragStart);
-    circlered.addEventListener('dragend', dragEnd);
+    star.addEventListener('dragstart', dragStart);
+    star.addEventListener('dragend', dragEnd);
 
 
 //Colorblock Listeners
 
 //purple
-    purpleBlock.addEventListener('dragover', dragOver);
-    purpleBlock.addEventListener('dragenter', dragEnter);
-    purpleBlock.addEventListener('dragleave', dragLeave);
-    purpleBlock.addEventListener('drop', dragDrop);
+    heartoutline.addEventListener('dragover', dragOver);
+    heartoutline.addEventListener('dragenter', dragEnter);
+    heartoutline.addEventListener('dragleave', dragLeave);
+    heartoutline.addEventListener('drop', dragDrop);
    
 //blue
-    blueBlock.addEventListener('dragover', dragOver);
-    blueBlock.addEventListener('dragenter', dragEnter);
-    blueBlock.addEventListener('dragleave', dragLeaveBlue);
-    blueBlock.addEventListener('drop', dragDropBlue);
+    circleOutline.addEventListener('dragover', dragOver);
+    circleOutline.addEventListener('dragenter', dragEnter);
+    circleOutline.addEventListener('dragleave', dragLeaveBlue);
+    circleOutline.addEventListener('drop', dragDropBlue);
 //green
-    greenBlock.addEventListener('dragover', dragOver);
-    greenBlock.addEventListener('dragenter', dragEnter);
-    greenBlock.addEventListener('dragleave', dragLeaveGreen);
-    greenBlock.addEventListener('drop', dragDropGreen);
+    squareOutline.addEventListener('dragover', dragOver);
+    squareOutline.addEventListener('dragenter', dragEnter);
+    squareOutline.addEventListener('dragleave', dragLeaveGreen);
+    squareOutline.addEventListener('drop', dragDropGreen);
 
 //yellow
-    yellowBlock.addEventListener('dragover', dragOver);
-    yellowBlock.addEventListener('dragenter', dragEnter);
-    yellowBlock.addEventListener('dragleave', dragLeaveYellow);
-    yellowBlock.addEventListener('drop', dragDropYellow);
+    triangleOutline.addEventListener('dragover', dragOver);
+    triangleOutline.addEventListener('dragenter', dragEnter);
+    triangleOutline.addEventListener('dragleave', dragLeaveYellow);
+    triangleOutline.addEventListener('drop', dragDropYellow);
 //orange
-    orangeBlock.addEventListener('dragover', dragOver);
-    orangeBlock.addEventListener('dragenter', dragEnter);
-    orangeBlock.addEventListener('dragleave', dragLeaveOrange);
-    orangeBlock.addEventListener('drop', dragDropOrange);
+    starOutline.addEventListener('dragover', dragOver);
+    starOutline.addEventListener('dragenter', dragEnter);
+    starOutline.addEventListener('dragleave', dragLeaveOrange);
+    starOutline.addEventListener('drop', dragDropOrange);
 //red
-    redBlock.addEventListener('dragover', dragOver);
-    redBlock.addEventListener('dragenter', dragEnter);
-    redBlock.addEventListener('dragleave', dragLeaveRed);
-    redBlock.addEventListener('drop', dragDropRed); 
+    pentagonOutline.addEventListener('dragover', dragOver);
+    pentagonOutline.addEventListener('dragenter', dragEnter);
+    pentagonOutline.addEventListener('dragleave', dragLeaveRed);
+    pentagonOutline.addEventListener('drop', dragDropRed); 
 
 
 
@@ -108,11 +108,11 @@ function dragLeave(){
 }
 
 function dragDrop(e){
-    if(mouseOver = "purpleBlock"){
+    if(mouseOver = "heartoutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circlepurple"){
     this.className = 'ColorPurple';
-    this.append(circlepurple);  
+    this.append(square);  
         }
     }  
 }
@@ -122,11 +122,11 @@ function dragLeaveBlue(){
 }
 
 function dragDropBlue(e){
-    if(mouseOver = "blueBlock"){
+    if(mouseOver = "circleOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circleblue"){
+        if(elementId === "circle"){
     this.className = 'ColorBlue';
-    this.append(circleblue);  
+    this.append(circle);  
         }
     }
 }
@@ -137,11 +137,11 @@ function dragLeaveGreen(){
 }
 
 function dragDropGreen(e){
-    if(mouseOver = "greenBlock"){
+    if(mouseOver = "squareOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circlegreen"){
+        if(elementId === "heart"){
     this.className = 'ColorGreen';
-    this.append(circlegreen);  
+    this.append(heart);  
         }
     }
 }
@@ -152,11 +152,11 @@ function dragLeaveYellow(){
 }
 
 function dragDropYellow(e){
-    if(mouseOver = "yellowBlock"){
+    if(mouseOver = "triangleOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circleyellow"){
+        if(elementId === "pentagon"){
     this.className = 'ColorYellow';
-    this.append(circleyellow);  
+    this.append(pentagon);  
         }
     }
 }
@@ -167,11 +167,11 @@ function dragLeaveOrange(){
 }
 
 function dragDropOrange(e){
-    if(mouseOver = "orangeBlock"){
+    if(mouseOver = "starOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circleorange"){
+        if(elementId === "triangle"){
     this.className = 'ColorOrange';
-    this.append(circleorange);  
+    this.append(triangle);  
         }
     }
 }
@@ -182,11 +182,11 @@ function dragLeaveRed(){
 }
 
 function dragDropRed(e){
-    if(mouseOver = "redBlock"){
+    if(mouseOver = "pentagonOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circlered"){
+        if(elementId === "star"){
     this.className = 'ColorRed';
-    this.append(circlered);  
+    this.append(star);  
         }
     }
 }
