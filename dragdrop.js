@@ -1,5 +1,3 @@
-
-//Level 1
 const circlepurple = document.getElementById('circlepurple');
 const circleblue = document.getElementById('circleblue');
 const circlered = document.getElementById('circlered');

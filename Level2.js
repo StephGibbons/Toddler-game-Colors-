@@ -1,18 +1,16 @@
+const circlepurple = document.getElementById('Square');
+const circleblue = document.getElementById('Circle');
+const circlered = document.getElementById('Star');
+const circleorange = document.getElementById('Triangle');
+const circlegreen = document.getElementById('Heart');
+const circleyellow = document.getElementById('Pentagon');
 
-//Level 1
-const circlepurple = document.getElementById('circlepurple');
-const circleblue = document.getElementById('circleblue');
-const circlered = document.getElementById('circlered');
-const circleorange = document.getElementById('circleorange');
-const circlegreen = document.getElementById('circlegreen');
-const circleyellow = document.getElementById('circleyellow');
-
-const purpleBlock = document.querySelector('.ColorPurple');
-const blueBlock = document.querySelector('.ColorBlue');
-const greenBlock = document.querySelector('.ColorGreen');
-const yellowBlock = document.querySelector('.ColorYellow');
-const orangeBlock = document.querySelector('.ColorOrange');
-const redBlock = document.querySelector('.ColorRed');
+const purpleBlock = document.querySelector('HeartOutline');
+const blueBlock = document.querySelector('CircleOutline');
+const greenBlock = document.querySelector('SquareOutline');
+const yellowBlock = document.querySelector('TriangleOutline');
+const orangeBlock = document.querySelector('StarOutline');
+const redBlock = document.querySelector('PentagonOutline');
 
 
 
