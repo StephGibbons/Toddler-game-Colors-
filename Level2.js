@@ -18,60 +18,60 @@ const pentagonOutline = document.getElementById('pentagonOutline');
 
 //Circle Listeners
 
-//purple
+//square
     square.addEventListener('dragstart', dragStart);
     square.addEventListener('dragend', dragEnd);
-//blue
+//cricle
     circle.addEventListener('dragstart', dragStart);
     circle.addEventListener('dragend', dragEnd);
-//green
+//heart
     heart.addEventListener('dragstart', dragStart);
     heart.addEventListener('dragend', dragEnd);
-//yellow
+//pentagon
     pentagon.addEventListener('dragstart', dragStart);
     pentagon.addEventListener('dragend', dragEnd);
-//orange
+//triangle
     triangle.addEventListener('dragstart', dragStart);
     triangle.addEventListener('dragend', dragEnd);
-//red
+//star
     star.addEventListener('dragstart', dragStart);
     star.addEventListener('dragend', dragEnd);
 
 
 //Colorblock Listeners
 
-//purple
+//heart
     heartOutline.addEventListener('dragover', dragOver);
     heartOutline.addEventListener('dragenter', dragEnter);
-    heartOutline.addEventListener('dragleave', dragLeave);
-    heartOutline.addEventListener('drop', dragDrop);
+    heartOutline.addEventListener('dragleave', dragLeaveHeart);
+    heartOutline.addEventListener('drop', dragDropHeart);
    
-//blue
+//circle
     circleOutline.addEventListener('dragover', dragOver);
     circleOutline.addEventListener('dragenter', dragEnter);
-    circleOutline.addEventListener('dragleave', dragLeaveBlue);
-    circleOutline.addEventListener('drop', dragDropBlue);
-//green
+    circleOutline.addEventListener('dragleave', dragLeaveCircle);
+    circleOutline.addEventListener('drop', dragDropCircle);
+//square
     squareOutline.addEventListener('dragover', dragOver);
     squareOutline.addEventListener('dragenter', dragEnter);
-    squareOutline.addEventListener('dragleave', dragLeaveGreen);
-    squareOutline.addEventListener('drop', dragDropGreen);
+    squareOutline.addEventListener('dragleave', dragLeaveSquare);
+    squareOutline.addEventListener('drop', dragDropSquare);
 
-//yellow
+//triangle
     triangleOutline.addEventListener('dragover', dragOver);
     triangleOutline.addEventListener('dragenter', dragEnter);
-    triangleOutline.addEventListener('dragleave', dragLeaveYellow);
-    triangleOutline.addEventListener('drop', dragDropYellow);
-//orange
+    triangleOutline.addEventListener('dragleave', dragLeaveTriangle);
+    triangleOutline.addEventListener('drop', dragDropTriangle);
+//Star
     starOutline.addEventListener('dragover', dragOver);
     starOutline.addEventListener('dragenter', dragEnter);
-    starOutline.addEventListener('dragleave', dragLeaveOrange);
-    starOutline.addEventListener('drop', dragDropOrange);
-//red
+    starOutline.addEventListener('dragleave', dragLeaveStar);
+    starOutline.addEventListener('drop', dragDropStar);
+//Pentagon
     pentagonOutline.addEventListener('dragover', dragOver);
     pentagonOutline.addEventListener('dragenter', dragEnter);
-    pentagonOutline.addEventListener('dragleave', dragLeaveRed);
-    pentagonOutline.addEventListener('drop', dragDropRed); 
+    pentagonOutline.addEventListener('dragleave', dragLeavePentagon);
+    pentagonOutline.addEventListener('drop', dragDropPentagon); 
 
 
 
@@ -99,33 +99,30 @@ function dragEnter(e){
 
 //colorspecificfunctions
 
-//purple
-
-
-
-function dragLeave(){
+//heart
+function dragLeaveHeart(){
     this.elementName = 'heartOutline';
 }
 
-function dragDrop(e){
+function dragDropHeart(e){
     if(mouseOver = "heartOutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "heart"){
-    this.className = 'heartOutline';
-    this.append(square);  
+    this.elementId = 'heartOutline';
+    this.append(heart);  
         }
     }  
 }
-//blue
-function dragLeaveBlue(){
-    this.className = 'ColorBlue';
+//circle
+function dragLeaveCircle(){
+    this.elementID = 'circleOutline';
 }
 
-function dragDropBlue(e){
+function dragDropCircle(e){
     if(mouseOver = "circleOutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circle"){
-    this.className = 'ColorBlue';
+    this.elementId = 'circleOutline';
     this.append(circle);  
         }
     }
@@ -151,7 +148,7 @@ function dragLeaveYellow(){
     this.className = 'ColorYellow';
 }
 
-function dragDropYellow(e){
+function dragDropTriangle(e){
     if(mouseOver = "triangleOutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "pentagon"){
@@ -161,31 +158,31 @@ function dragDropYellow(e){
     }
 }
 
-//orange
-function dragLeaveOrange(){
-    this.className = 'ColorOrange';
+//Star
+function dragLeaveStar(){
+    this.className = 'ColorStar';
 }
 
-function dragDropOrange(e){
+function dragDropStar(e){
     if(mouseOver = "starOutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "triangle"){
-    this.className = 'ColorOrange';
+    this.className = 'ColorStar';
     this.append(triangle);  
         }
     }
 }
 
-//red
-function dragLeaveRed(){
-    this.className = 'ColorRed';
+//Pentagon
+function dragLeavePentagon(){
+    this.className = 'ColorPentagon';
 }
 
-function dragDropRed(e){
+function dragDropPentagon(e){
     if(mouseOver = "pentagonOutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "star"){
-    this.className = 'ColorRed';
+    this.className = 'ColorPentagon';
     this.append(star);  
         }
     }
