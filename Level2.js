@@ -97,11 +97,11 @@ function dragEnter(e){
     this.className += ' hover';
 }
 
-//colorspecificfunctions
+//shapespecificfunctions
 
 //heart
 function dragLeaveHeart(){
-    this.elementName = 'heartOutline';
+    this.elementId = 'heartOutline';
 }
 
 function dragDropHeart(e){
@@ -115,7 +115,7 @@ function dragDropHeart(e){
 }
 //circle
 function dragLeaveCircle(){
-    this.elementID = 'circleOutline';
+    this.elementId = 'circleOutline';
 }
 
 function dragDropCircle(e){
@@ -128,32 +128,32 @@ function dragDropCircle(e){
     }
 }
 
-//green
-function dragLeaveGreen(){
-    this.className = 'ColorGreen';
-}
-
-function dragDropGreen(e){
-    if(mouseOver = "squareOutline"){
-        var elementId = e.dataTransfer.getData("id");
-        if(elementId === "heart"){
-    this.className = 'ColorGreen';
-    this.append(heart);  
-        }
-    }
-}
-
-//yellow
-function dragLeaveYellow(){
-    this.className = 'ColorYellow';
+//Triangle
+function dragLeaveTriangle(){
+    this.elementId = 'triangleOutline';
 }
 
 function dragDropTriangle(e){
     if(mouseOver = "triangleOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "pentagon"){
-    this.className = 'ColorYellow';
-    this.append(pentagon);  
+        if(elementId === "triangle"){
+    this.elementId = 'triangleOutline';
+    this.append(triangle);  
+        }
+    }
+}
+
+//Square
+function dragLeaveSquare(){
+    this.elementId = 'squareOutline';
+}
+
+function dragDropSquare(e){
+    if(mouseOver = "squareOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "square"){
+    this.elementId = 'squareOutline';
+    this.append(square);  
         }
     }
 }
@@ -166,24 +166,24 @@ function dragLeaveStar(){
 function dragDropStar(e){
     if(mouseOver = "starOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "triangle"){
-    this.className = 'ColorStar';
-    this.append(triangle);  
+        if(elementId === "star"){
+    this.elementId = 'starOutline';
+    this.append(star);  
         }
     }
 }
 
 //Pentagon
 function dragLeavePentagon(){
-    this.className = 'ColorPentagon';
+    this.elementId = 'pentagonOutline';
 }
 
 function dragDropPentagon(e){
     if(mouseOver = "pentagonOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "star"){
-    this.className = 'ColorPentagon';
-    this.append(star);  
+        if(elementId === "pentagon"){
+    this.elementId = 'pentagonOutline';
+    this.append(pentagon);  
         }
     }
 }
