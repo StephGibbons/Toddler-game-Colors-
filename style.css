@@ -118,14 +118,14 @@ h1 {
 }
 
 .shapes{
-
+    position: relative;
     height:200px;
     width:200px;
     margin: 15px;
 }
 
 .shapeOutlines{
-
+    position: relative;
     height:200px;
     width:200px;
     margin: 15px;
