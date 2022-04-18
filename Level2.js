@@ -183,7 +183,7 @@ function dragDropPentagon(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "pentagon"){
     this.elementId = 'pentagonOutline';
-    this.append(pentagon);  
+    this.prepend(pentagon);  
         }
     }
 }
