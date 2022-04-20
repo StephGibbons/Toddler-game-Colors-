@@ -16,6 +16,12 @@ h1 {
     position: center;
 }
 
+.GameBox{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
 
 .wrapper{
     width: 66%;
@@ -152,4 +158,9 @@ h1 {
     flex-wrap: wrap;
     justify-content:center;
     align-items:center;
+}
+.GameBoxLevelTwo{
+    width:100%;
+    display: flex;
+    flex-direction: column;
 }

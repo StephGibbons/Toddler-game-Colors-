@@ -184,7 +184,7 @@ function dragDropPentagon(e){
         if(elementId === "pentagon"){
     this.elementId = 'pentagonOutline';
     this.append(pentagon);  
-    pentagonOutline == pentagon;
+   
         }
     }
 }
