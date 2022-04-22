@@ -124,7 +124,7 @@ h1 {
 }
 
 .shapes{
-   
+    z-index:1;
     height:200px;
     width:200px;
     margin: 15px;
@@ -132,7 +132,7 @@ h1 {
 }
 
 .shapeOutlines{
-
+    position: relative;
     height:200px;
     width:200px;
     margin: 15px;
