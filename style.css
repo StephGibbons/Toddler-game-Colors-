@@ -96,6 +96,15 @@ h1 {
 	border-radius: 15px;
 }
 
+
+.wrapper .numberHolder{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+	border-color: #000000;
+	border-radius: 15px;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -164,4 +173,9 @@ h1 {
     flex-direction: column;
 }
 
+.numbers{
+    height:222px;
+    width:216px;
+    margin: 15px;
 
+}
