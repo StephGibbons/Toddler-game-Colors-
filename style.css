@@ -97,14 +97,6 @@ h1 {
 }
 
 
-.wrapper .numberHolder{
-    width: 150px;
-    height: 150px;
-    margin: 15px;
-	border-color: #000000;
-	border-radius: 15px;
-}
-
 .container{
     display: flex;
     flex-direction: row;
@@ -178,4 +170,14 @@ h1 {
     width:216px;
     margin: 15px;
 
+}
+
+.levelTwoWrapper .numberHolder{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-style: solid;
+	border-color: #000000;
+	border-radius: 15px;
+    border-width: 2px;
 }
