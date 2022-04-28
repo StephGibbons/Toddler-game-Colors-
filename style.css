@@ -121,48 +121,86 @@ h1 {
     opacity: 0;
 }
 
-.shapes{
-    position: relative;
-    z-index:4;
-    height:200px;
-    width:200px;
-    margin: 15px;
-    z-index: 9;
-}
 
-.shapeOutlines{
-    position: relative;
-    z-index:1;
-    height:200px;
-    width:200px;
-    margin: 15px;
-
-}
 
 .levelTwoWrapper{
     width:100%;
-    display: flex;
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content:center;
     align-items:center;
     margin-top: 75px;
     margin-bottom: 100px ;
-
 }
 
 .levelTwoContainer{
-    width: 100%;
-    display: flex;
+    width:100%;
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content:center;
     align-items:center;
+    margin-top: 75px;
+    margin-bottom: 100px ;
 }
+
 .GameBoxLevelTwo{
     width:100%;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.shapes{
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+
+.shapeOutline{
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+.levelTwoWrapper .circleOutline{
+    background-image: url(Images/CircleOutline.png);
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+.levelTwoWrapper .heartOutline{
+    background-image: url(Images/HeartOutline.png);
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+.levelTwoWrapper .pentagonOutline{
+    background-image: url(Images/PentagonOutline.png);
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+.levelTwoWrapper .starOutline{
+    background-image: url(Images/StarOutline.png);
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+.levelTwoWrapper .triangleOutline{
+    background-image: url(Images/TriangleOutline.png);
+    height:200px;
+    width:200px;
+    margin: 15px;
+}
+
+.levelTwoWrapper .squareOutline{
+    background-image: url(Images/SquareOutline.png);
+    height:200px;
+    width:200px;
+    margin: 15px;
 }
 
 .numbers{
@@ -180,4 +218,6 @@ h1 {
 	border-color: #000000;
 	border-radius: 15px;
     border-width: 2px;
+    justify-content: center;
+    align-items: center;
 }
