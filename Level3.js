@@ -1,84 +1,87 @@
-const square = document.getElementById('square');
-const circle = document.getElementById('circle');
-const star = document.getElementById('star');
-const triangle = document.getElementById('triangle');
-const heart = document.getElementById('heart');
-const pentagon = document.getElementById('pentagon');
+const one = document.getElementById('one');
+const two = document.getElementById('two');
+const three = document.getElementById('three');
+const four = document.getElementById('four');
+const five = document.getElementById('five');
+const six = document.getElementById('six');
 
-const heartOutline = document.getElementById('heartOutline');
-const circleOutline = document.getElementById('circleOutline');
-const squareOutline = document.getElementById('squareOutline');
-const triangleOutline = document.getElementById('triangleOutline');
-const starOutline = document.getElementById('starOutline');
-const pentagonOutline = document.getElementById('pentagonOutline');
-
-
+const fiveOutline = document.getElementById('fiveOutline');
+const twoOutline = document.getElementById('twoOutline');
+const oneOutline = document.getElementById('oneOutline');
+const fourOutline = document.getElementById('fourOutline');
+const threeOutline = document.getElementById('threeOutline');
+const sixOutline = document.getElementById('sixOutline');
 
 
 
-//Circle Listeners
 
-//square
-    square.addEventListener('dragstart', dragStart);
-    square.addEventListener('dragend', dragEnd);
+
+//two Listeners
+
+//one
+    one.addEventListener('dragstart', dragthreet);
+    one.addEventListener('dragend', dragEnd);
 //cricle
-    circle.addEventListener('dragstart', dragStart);
-    circle.addEventListener('dragend', dragEnd);
-//heart
-    heart.addEventListener('dragstart', dragStart);
-    heart.addEventListener('dragend', dragEnd);
-//pentagon
-    pentagon.addEventListener('dragstart', dragStart);
-    pentagon.addEventListener('dragend', dragEnd);
-//triangle
-    triangle.addEventListener('dragstart', dragStart);
-    triangle.addEventListener('dragend', dragEnd);
-//star
-    star.addEventListener('dragstart', dragStart);
-    star.addEventListener('dragend', dragEnd);
+    two.addEventListener('dragstart', dragthreet);
+    two.addEventListener('dragend', dragEnd);
+//five
+    five.addEventListener('dragstart', dragthreet);
+    five.addEventListener('dragend', dragEnd);
+//six
+    six.addEventListener('dragstart', dragthreet);
+    six.addEventListener('dragend', dragEnd);
+//four
+    four.addEventListener('dragstart', dragthreet);
+    four.addEventListener('dragend', dragEnd);
+//three
+    three.addEventListener('dragstart', dragthreet);
+    three.addEventListener('dragend', dragEnd);
 
 
 //Colorblock Listeners
-
-//heart
-    heartOutline.addEventListener('dragover', dragOver);
-    heartOutline.addEventListener('dragenter', dragEnter);
-    heartOutline.addEventListener('dragleave', dragLeaveHeart);
-    heartOutline.addEventListener('drop', dragDropHeart);
    
-//circle
-    circleOutline.addEventListener('dragover', dragOver);
-    circleOutline.addEventListener('dragenter', dragEnter);
-    circleOutline.addEventListener('dragleave', dragLeaveCircle);
-    circleOutline.addEventListener('drop', dragDropCircle);
-//square
-    squareOutline.addEventListener('dragover', dragOver);
-    squareOutline.addEventListener('dragenter', dragEnter);
-    squareOutline.addEventListener('dragleave', dragLeaveSquare);
-    squareOutline.addEventListener('drop', dragDropSquare);
+//one
+    oneOutline.addEventListener('dragover', dragOver);
+    oneOutline.addEventListener('dragenter', dragEnter);
+    oneOutline.addEventListener('dragleave', dragLeaveone);
+    oneOutline.addEventListener('drop', dragDropone);
 
-//triangle
-    triangleOutline.addEventListener('dragover', dragOver);
-    triangleOutline.addEventListener('dragenter', dragEnter);
-    triangleOutline.addEventListener('dragleave', dragLeaveTriangle);
-    triangleOutline.addEventListener('drop', dragDropTriangle);
-//Star
-    starOutline.addEventListener('dragover', dragOver);
-    starOutline.addEventListener('dragenter', dragEnter);
-    starOutline.addEventListener('dragleave', dragLeaveStar);
-    starOutline.addEventListener('drop', dragDropStar);
-//Pentagon
-    pentagonOutline.addEventListener('dragover', dragOver);
-    pentagonOutline.addEventListener('dragenter', dragEnter);
-    pentagonOutline.addEventListener('dragleave', dragLeavePentagon);
-    pentagonOutline.addEventListener('drop', dragDropPentagon); 
+ //two
+    twoOutline.addEventListener('dragover', dragOver);
+    twoOutline.addEventListener('dragenter', dragEnter);
+    twoOutline.addEventListener('dragleave', dragLeavetwo);
+    twoOutline.addEventListener('drop', dragDroptwo);
+
+//three
+    threeOutline.addEventListener('dragover', dragOver);
+    threeOutline.addEventListener('dragenter', dragEnter);
+    threeOutline.addEventListener('dragleave', dragLeavethree);
+    threeOutline.addEventListener('drop', dragDropthree);
+
+//four
+    fourOutline.addEventListener('dragover', dragOver);
+    fourOutline.addEventListener('dragenter', dragEnter);
+    fourOutline.addEventListener('dragleave', dragLeavefour);
+    fourOutline.addEventListener('drop', dragDropfour);
+
+//five
+    fiveOutline.addEventListener('dragover', dragOver);
+    fiveOutline.addEventListener('dragenter', dragEnter);
+    fiveOutline.addEventListener('dragleave', dragLeavefive);
+    fiveOutline.addEventListener('drop', dragDropfive);
+
+//six
+    sixOutline.addEventListener('dragover', dragOver);
+    sixOutline.addEventListener('dragenter', dragEnter);
+    sixOutline.addEventListener('dragleave', dragLeavesix);
+    sixOutline.addEventListener('drop', dragDropsix); 
 
 
 
 
 
 //Drag Functions
-function dragStart(e){
+function dragstart(e){
     this.className += ' hold';
     setTimeout(()=>(this.className = 'invisible'),0);
     e.dataTransfer.setData("id", e.target.id);
@@ -99,93 +102,93 @@ function dragEnter(e){
 
 //shapespecificfunctions
 
-//heart
-function dragLeaveHeart(){
-    this.elementId = 'heartOutline';
+//five
+function dragLeavefive(){
+    this.elementId = 'fiveOutline';
 }
 
-function dragDropHeart(e){
-    if(mouseOver = "heartOutline"){
+function dragDropfive(e){
+    if(mouseOver = "fiveOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "heart"){
-    this.elementId = 'heartOutline';
-    this.append(heart);  
+        if(elementId === "five"){
+    this.elementId = 'fiveOutline';
+    this.append(five);  
         }
     }  
 }
-//circle
-function dragLeaveCircle(){
-    this.elementId = 'circleOutline';
+//two
+function dragLeavetwo(){
+    this.elementId = 'twoOutline';
 }
 
-function dragDropCircle(e){
-    if(mouseOver = "circleOutline"){
+function dragDroptwo(e){
+    if(mouseOver = "twoOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "circle"){
-    this.elementId = 'circleOutline';
-    this.append(circle);  
+        if(elementId === "two"){
+    this.elementId = 'twoOutline';
+    this.append(two);  
         }
     }
 }
 
-//Triangle
-function dragLeaveTriangle(){
-    this.elementId = 'triangleOutline';
+//four
+function dragLeavefour(){
+    this.elementId = 'fourOutline';
 }
 
-function dragDropTriangle(e){
-    if(mouseOver = "triangleOutline"){
+function dragDropfour(e){
+    if(mouseOver = "fourOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "triangle"){
-    this.elementId = 'triangleOutline';
-    this.append(triangle);  
+        if(elementId === "four"){
+    this.elementId = 'fourOutline';
+    this.append(four);  
         }
     }
 }
 
-//Square
-function dragLeaveSquare(){
-    this.elementId = 'squareOutline';
+//one
+function dragLeaveone(){
+    this.elementId = 'oneOutline';
 }
 
-function dragDropSquare(e){
-    if(mouseOver = "squareOutline"){
+function dragDropone(e){
+    if(mouseOver = "oneOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "square"){
-    this.elementId = 'squareOutline';
-    this.append(square);  
+        if(elementId === "one"){
+    this.elementId = 'oneOutline';
+    this.append(one);  
         }
     }
 }
 
-//Star
-function dragLeaveStar(){
-    this.className = 'ColorStar';
+//three
+function dragLeavethree(){
+    this.className = 'Colorthree';
 }
 
-function dragDropStar(e){
-    if(mouseOver = "starOutline"){
+function dragDropthree(e){
+    if(mouseOver = "threeOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "star"){
-    this.elementId = 'starOutline';
-    this.append(star);  
+        if(elementId === "three"){
+    this.elementId = 'threeOutline';
+    this.append(three);  
         }
     }
 }
 
-//Pentagon
-function dragLeavePentagon(){
-    this.elementId = 'pentagonOutline';
+//six
+function dragLeavesix(){
+    this.elementId = 'sixOutline';
 }
 
-function dragDropPentagon(e){
-    if(mouseOver = "pentagonOutline"){
+function dragDropsix(e){
+    if(mouseOver = "sixOutline"){
         var elementId = e.dataTransfer.getData("id");
-        if(elementId === "pentagon"){
-    this.elementId = 'pentagonOutline';
-    this.append(pentagon); 
-    pentagonOutline.classList.remove("shapeOutlines") 
-    pentagonOutline.classList.add("invisible")
+        if(elementId === "six"){
+    this.elementId = 'sixOutline';
+    this.append(six); 
+    sixOutline.classList.remove("shapeOutlines") 
+    sixOutline.classList.add("invisible")
     
     
    
