@@ -160,7 +160,7 @@ function dragDropSquare(e){
 
 //Star
 function dragLeaveStar(){
-    this.className = 'ColorStar';
+    this.elementID = 'ColorStar';
 }
 
 function dragDropStar(e){

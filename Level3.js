@@ -4,6 +4,10 @@ const three = document.getElementById('three');
 const four = document.getElementById('four');
 const five = document.getElementById('five');
 const six = document.getElementById('six');
+const seven = document.getElementById('seven');
+const eight = document.getElementById('eight');
+const nine = document.getElementById('nine');
+const ten = document.getElementById('ten');
 
 const fiveOutline = document.getElementById('fiveOutline');
 const twoOutline = document.getElementById('twoOutline');
@@ -11,34 +15,53 @@ const oneOutline = document.getElementById('oneOutline');
 const fourOutline = document.getElementById('fourOutline');
 const threeOutline = document.getElementById('threeOutline');
 const sixOutline = document.getElementById('sixOutline');
+const sevenOutline = document.getElementById('sevenOutline');
+const eightOutline = document.getElementById('eightOutline');
+const nineOutline = document.getElementById('nineOutline');
+const tenOutline = document.getElementById('tenOutline');
 
 
 
 
-
-//two Listeners
+//number
 
 //one
-    one.addEventListener('dragstart', dragthreet);
+    one.addEventListener('dragstart', dragstart);
     one.addEventListener('dragend', dragEnd);
-//cricle
-    two.addEventListener('dragstart', dragthreet);
+//two
+    two.addEventListener('dragstart', dragstart);
     two.addEventListener('dragend', dragEnd);
 //five
-    five.addEventListener('dragstart', dragthreet);
+    five.addEventListener('dragstart', dragstart);
     five.addEventListener('dragend', dragEnd);
 //six
-    six.addEventListener('dragstart', dragthreet);
+    six.addEventListener('dragstart', dragstart);
     six.addEventListener('dragend', dragEnd);
 //four
-    four.addEventListener('dragstart', dragthreet);
+    four.addEventListener('dragstart', dragstart);
     four.addEventListener('dragend', dragEnd);
 //three
-    three.addEventListener('dragstart', dragthreet);
+    three.addEventListener('dragstart', dragstart);
     three.addEventListener('dragend', dragEnd);
 
+//seven
+    seven.addEventListener('dragstart', dragstart);
+    seven.addEventListener('dragend', dragEnd);
 
-//Colorblock Listeners
+//eight
+    eight.addEventListener('dragstart', dragstart);
+    eight.addEventListener('dragend', dragEnd);
+
+//nine
+    nine.addEventListener('dragstart', dragstart);
+    nine.addEventListener('dragend', dragEnd);
+
+//ten
+    ten.addEventListener('dragstart', dragstart);
+    ten.addEventListener('dragend', dragEnd);
+
+
+//numberlisteners
    
 //one
     oneOutline.addEventListener('dragover', dragOver);
@@ -76,6 +99,30 @@ const sixOutline = document.getElementById('sixOutline');
     sixOutline.addEventListener('dragleave', dragLeavesix);
     sixOutline.addEventListener('drop', dragDropsix); 
 
+//seven
+    sevenOutline.addEventListener('dragover', dragOver);
+    sevenOutline.addEventListener('dragenter', dragEnter);
+    sevenOutline.addEventListener('dragleave', dragLeaveseven);
+    sevenOutline.addEventListener('drop', dragDropseven); 
+
+//eight
+    eightOutline.addEventListener('dragover', dragOver);
+    eightOutline.addEventListener('dragenter', dragEnter);
+    eightOutline.addEventListener('dragleave', dragLeaveeight);
+    eightOutline.addEventListener('drop', dragDropeight); 
+
+//nine
+    nineOutline.addEventListener('dragover', dragOver);
+    nineOutline.addEventListener('dragenter', dragEnter);
+    nineOutline.addEventListener('dragleave', dragLeavenine);
+    nineOutline.addEventListener('drop', dragDropnine); 
+
+//ten
+    tenOutline.addEventListener('dragover', dragOver);
+    tenOutline.addEventListener('dragenter', dragEnter);
+    tenOutline.addEventListener('dragleave', dragLeaveten);
+    tenOutline.addEventListener('drop', dragDropten); 
+
 
 
 
@@ -88,7 +135,7 @@ function dragstart(e){
 }
 
 function dragEnd(){
-    this.className = 'shape';
+    this.className = 'numbers';
 } 
 
 function dragOver(e){
@@ -163,7 +210,7 @@ function dragDropone(e){
 
 //three
 function dragLeavethree(){
-    this.className = 'Colorthree';
+    this.elementID = 'three';
 }
 
 function dragDropthree(e){
@@ -192,6 +239,21 @@ function dragDropsix(e){
     
     
    
+        }
+    }
+}
+
+//seven
+function dragLeavethree(){
+    this.elementID = 'seven';
+}
+
+function dragDropthree(e){
+    if(mouseOver = "sevenOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "seven"){
+    this.elementId = 'sevenOutline';
+    this.append(three);  
         }
     }
 }
