@@ -9,11 +9,12 @@ const eight = document.getElementById('eight');
 const nine = document.getElementById('nine');
 const ten = document.getElementById('ten');
 
-const fiveOutline = document.getElementById('fiveOutline');
+
 const twoOutline = document.getElementById('twoOutline');
 const oneOutline = document.getElementById('oneOutline');
-const fourOutline = document.getElementById('fourOutline');
 const threeOutline = document.getElementById('threeOutline');
+const fourOutline = document.getElementById('fourOutline');
+const fiveOutline = document.getElementById('fiveOutline');
 const sixOutline = document.getElementById('sixOutline');
 const sevenOutline = document.getElementById('sevenOutline');
 const eightOutline = document.getElementById('eightOutline');
@@ -31,19 +32,18 @@ const tenOutline = document.getElementById('tenOutline');
 //two
     two.addEventListener('dragstart', dragstart);
     two.addEventListener('dragend', dragEnd);
+//three
+    three.addEventListener('dragstart', dragstart);
+    three.addEventListener('dragend', dragEnd);
+//four
+    four.addEventListener('dragstart', dragstart);
+    four.addEventListener('dragend', dragEnd);
 //five
     five.addEventListener('dragstart', dragstart);
     five.addEventListener('dragend', dragEnd);
 //six
     six.addEventListener('dragstart', dragstart);
     six.addEventListener('dragend', dragEnd);
-//four
-    four.addEventListener('dragstart', dragstart);
-    four.addEventListener('dragend', dragEnd);
-//three
-    three.addEventListener('dragstart', dragstart);
-    three.addEventListener('dragend', dragEnd);
-
 //seven
     seven.addEventListener('dragstart', dragstart);
     seven.addEventListener('dragend', dragEnd);
@@ -144,54 +144,9 @@ function dragOver(e){
 
 function dragEnter(e){
     e.preventDefault();
-    this.className += ' hover';
 }
 
-//shapespecificfunctions
-
-//five
-function dragLeavefive(){
-    this.elementId = 'fiveOutline';
-}
-
-function dragDropfive(e){
-    if(mouseOver = "fiveOutline"){
-        var elementId = e.dataTransfer.getData("id");
-        if(elementId === "five"){
-    this.elementId = 'fiveOutline';
-    this.append(five);  
-        }
-    }  
-}
-//two
-function dragLeavetwo(){
-    this.elementId = 'twoOutline';
-}
-
-function dragDroptwo(e){
-    if(mouseOver = "twoOutline"){
-        var elementId = e.dataTransfer.getData("id");
-        if(elementId === "two"){
-    this.elementId = 'twoOutline';
-    this.append(two);  
-        }
-    }
-}
-
-//four
-function dragLeavefour(){
-    this.elementId = 'fourOutline';
-}
-
-function dragDropfour(e){
-    if(mouseOver = "fourOutline"){
-        var elementId = e.dataTransfer.getData("id");
-        if(elementId === "four"){
-    this.elementId = 'fourOutline';
-    this.append(four);  
-        }
-    }
-}
+//numberspecificfunctions
 
 //one
 function dragLeaveone(){
@@ -204,6 +159,21 @@ function dragDropone(e){
         if(elementId === "one"){
     this.elementId = 'oneOutline';
     this.append(one);  
+        }
+    }
+}
+
+//two
+function dragLeavetwo(){
+    this.elementId = 'twoOutline';
+}
+
+function dragDroptwo(e){
+    if(mouseOver = "twoOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "two"){
+    this.elementId = 'twoOutline';
+    this.append(two);  
         }
     }
 }
@@ -223,6 +193,35 @@ function dragDropthree(e){
     }
 }
 
+//four
+function dragLeavefour(){
+    this.elementId = 'fourOutline';
+}
+
+function dragDropfour(e){
+    if(mouseOver = "fourOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "four"){
+    this.elementId = 'fourOutline';
+    this.append(four);  
+        }
+    }
+}
+//five
+function dragLeavefive(){
+    this.elementId = 'fiveOutline';
+}
+
+function dragDropfive(e){
+    if(mouseOver = "fiveOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "five"){
+    this.elementId = 'fiveOutline';
+    this.append(five);  
+        }
+    }  
+}
+
 //six
 function dragLeavesix(){
     this.elementId = 'sixOutline';
@@ -234,26 +233,65 @@ function dragDropsix(e){
         if(elementId === "six"){
     this.elementId = 'sixOutline';
     this.append(six); 
-    sixOutline.classList.remove("shapeOutlines") 
-    sixOutline.classList.add("invisible")
-    
-    
-   
+
         }
     }
 }
 
 //seven
-function dragLeavethree(){
+function dragLeaveseven(){
     this.elementID = 'seven';
 }
 
-function dragDropthree(e){
+function dragDropseven(e){
     if(mouseOver = "sevenOutline"){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "seven"){
     this.elementId = 'sevenOutline';
-    this.append(three);  
+    this.append(seven);  
+        }
+    }
+}
+
+//eigth
+function dragLeaveeight(){
+    this.elementID = 'eight';
+}
+
+function dragDropeight(e){
+    if(mouseOver = "eightOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "eight"){
+    this.elementId = 'eightOutline';
+    this.append(eight);  
+        }
+    }
+}
+//nine
+function dragLeavenine(){
+    this.elementID = 'nine';
+}
+
+function dragDropnine(e){
+    if(mouseOver = "nineOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "nine"){
+    this.elementId = 'nineOutline';
+    this.append(nine);  
+        }
+    }
+}
+//ten
+function dragLeaveten(){
+    this.elementID = 'ten';
+}
+
+function dragDropten(e){
+    if(mouseOver = "tenOutline"){
+        var elementId = e.dataTransfer.getData("id");
+        if(elementId === "ten"){
+    this.elementId = 'ten';
+    this.append(ten);  
         }
     }
 }
