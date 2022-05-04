@@ -4,8 +4,10 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	background-image: url(Images/Wallpaper.jpeg);
 	color: #000000;
-    margin-left: auto;
-    margin-right: auto;
+    display:flex; 
+    align-items: center;
+    flex-direction:column; 
+    justify-content:center;
 
 }
 
@@ -21,11 +23,14 @@ h1 {
 
 .GameBox{
     width:1100px;
-    height:750px;
+    height:650px;
     display: flex;
     flex-direction: row;
-    border:dashed;
+    border: double;
+    border-radius: 45px;
     justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    margin-bottom: 15px;
 }
 
 
@@ -38,8 +43,6 @@ h1 {
     align-items:center;
     margin-top: 25px;
     margin-bottom: 25px ;
-    border: dotted;
-    background-color: rgba(0,0,0,.5);
 
 }
 
@@ -110,9 +113,9 @@ h1 {
     flex-wrap: wrap;
     justify-content:center;
     align-items:center;
+    border-left: double;
     width: 40%;
-    border:double;
-    background-color: rgba(0,0,0,.5);
+
 }
 
 .circle{
