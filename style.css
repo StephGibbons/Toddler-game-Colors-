@@ -4,9 +4,9 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	background-image: url(Images/Wallpaper.jpeg);
 	color: #000000;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 h1 {
@@ -20,26 +20,26 @@ h1 {
 }
 
 .GameBox{
-    width:1250px;
+    width:1100px;
     height:750px;
     display: flex;
     flex-direction: row;
-    background-color: rgba(0,0,0,.5);
     border:dashed;
     justify-content: center;
 }
 
 
 .wrapper{
-    width: 66%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
     align-items:center;
-    margin-top: 50px;
-    margin-bottom: 50px ;
+    margin-top: 25px;
+    margin-bottom: 25px ;
     border: dotted;
+    background-color: rgba(0,0,0,.5);
 
 }
 
@@ -110,8 +110,9 @@ h1 {
     flex-wrap: wrap;
     justify-content:center;
     align-items:center;
-    width: 33%;
+    width: 40%;
     border:double;
+    background-color: rgba(0,0,0,.5);
 }
 
 .circle{
