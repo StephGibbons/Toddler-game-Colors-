@@ -20,20 +20,16 @@ h1 {
     position: center;
 }
 
-a{
-    text-decoration: none;
+.invisible{
+    display: none;
 }
-button{
-    width: 200px;
-    height: 50px;
-    font-size:120%;
-    border-radius: 5px;
-    background-color:#f8f8f8;
-    font-weight: bold;
 
+.disappear{
+    opacity: 0;
 }
 
 
+/* Level 1 Styling*/
 .GameBox{
     width:1100px;
     height:625px;
@@ -138,15 +134,7 @@ button{
 }
 
 
-.invisible{
-    display: none;
-}
-
-.disappear{
-    opacity: 0;
-}
-
-
+/*Level 2 and 3 styling*/
 
 .levelTwoWrapper{
     width: 100%;
@@ -245,4 +233,38 @@ button{
     border-width: 2px;
     justify-content: center;
     align-items: center;
+}
+
+/* buttons*/
+.gameselector{
+    width:90%;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size:120%;
+    border-radius: 5px;
+    background-color:#f8f8f8;
+    font-weight: bold;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.selected{
+    background-color: #fcfcfc;
+    color: #255627;
+    width: 60%;
+    font-weight: bold;
+}
+.unselected{
+    width: 40%;
+}
+.unselected:hover{
+    background-color: #e3d2ff;
+    color: #3a2556;
+    font-weight: bold;
 }
