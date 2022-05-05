@@ -133,6 +133,9 @@ h1 {
     margin:15px;
 }
 
+/*Level 1 animations*/
+
+
 
 /*Level 2 and 3 styling*/
 
@@ -237,31 +240,35 @@ h1 {
 
 /* buttons*/
 .gameselector{
-    width:90%;
+    width:80%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 button{
-    width: 200px;
-    height: 50px;
     font-size:120%;
     border-radius: 5px;
-    background-color:#f8f8f8;
     font-weight: bold;
 
 }
 
 a{
     text-decoration: none;
+    color:rgb(59, 59, 59);
 }
 
 .selected{
-    background-color: #fcfcfc;
+    background-color: #abcab3;
     color: #255627;
-    width: 60%;
+    width: 25%;
     font-weight: bold;
 }
 .unselected{
-    width: 40%;
+    width: 25%;
+    background-color: #c3c2c4;
+    
+    
 }
 .unselected:hover{
     background-color: #e3d2ff;
