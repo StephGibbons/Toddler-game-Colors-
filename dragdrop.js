@@ -90,11 +90,12 @@ function dragEnd(){
 
 function dragOver(e){
     e.preventDefault();
+    this.classList.add('grow');
 }
 
 function dragEnter(e){
     e.preventDefault();
-    this.className += ' hover';
+
 }
 
 //colorspecificfunctions
