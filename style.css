@@ -20,12 +20,7 @@ h1 {
     position: center;
 }
 
-.invisible{
-    display: none;
-}
-
-.disappear{
-    opacity: 0;
+.grow:hover { transform: scale(1.1); 
 }
 
 
@@ -38,7 +33,7 @@ h1 {
     border: double;
     border-radius: 45px;
     justify-content: center;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(255, 255, 255, 0.75);
     margin-bottom: 15px;
 }
 
@@ -219,6 +214,7 @@ h1 {
     margin: 10px;
 }
 
+/* level 3 styling*/
 .numbers{
     height:125px;
     width: 125px;
@@ -229,13 +225,11 @@ h1 {
 .levelTwoWrapper .numberHolder{
     width: 100px;
     height: 100px;
-    margin: 15px;
+    margin: auto;
     border-style: solid;
 	border-color: #000000;
 	border-radius: 15px;
     border-width: 2px;
-    justify-content: center;
-    align-items: center;
 }
 
 /* buttons*/
@@ -275,3 +269,5 @@ a{
     color: #3a2556;
     font-weight: bold;
 }
+
+
