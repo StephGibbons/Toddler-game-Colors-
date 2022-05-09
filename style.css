@@ -155,6 +155,8 @@ h1 {
 }
 
 .GameBoxLevelTwo{
+    display: flex;
+    flex-direction: column;
     width:95%;
     height: 600px;
     justify-content: center;
@@ -216,16 +218,19 @@ h1 {
 
 /* level 3 styling*/
 .numbers{
-    height:125px;
-    width: 125px;
-    margin: 5px;
-
+    height:100px;
+    width: 100px;
+    border:dashed;
 }
 
 .levelTwoWrapper .numberHolder{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     width: 100px;
     height: 100px;
-    margin: auto;
+    margin: 10px;
     border-style: solid;
 	border-color: #000000;
 	border-radius: 15px;
