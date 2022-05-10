@@ -161,6 +161,8 @@ function dragDropone(e){
         if(elementId === "one"){
     this.elementId = 'oneOutline';
     this.append(one);  
+    this.classList.remove('grow2');
+    this.classList.add('oneColor');
         }
     }
 }
@@ -177,6 +179,8 @@ function dragDroptwo(e){
         if(elementId === "two"){
     this.elementId = 'twoOutline';
     this.append(two);  
+    this.classList.remove('grow2');
+    this.classList.add('twoColor');
         }
     }
 }
@@ -192,7 +196,9 @@ function dragDropthree(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "three"){
     this.elementId = 'threeOutline';
-    this.append(three);  
+    this.append(three);
+    this.classList.remove('grow2');
+    this.classList.add('threeColor');  
         }
     }
 }
@@ -208,7 +214,9 @@ function dragDropfour(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "four"){
     this.elementId = 'fourOutline';
-    this.append(four);  
+    this.append(four); 
+    this.classList.remove('grow2');
+    this.classList.add('fourColor'); 
         }
     }
 }
@@ -224,6 +232,8 @@ function dragDropfive(e){
         if(elementId === "five"){
     this.elementId = 'fiveOutline';
     this.append(five);  
+    this.classList.remove('grow2');
+    this.classList.add('fiveColor');
         }
     }  
 }
@@ -240,6 +250,8 @@ function dragDropsix(e){
         if(elementId === "six"){
     this.elementId = 'sixOutline';
     this.append(six); 
+    this.classList.remove('grow2');
+    this.classList.add('sixColor');
 
         }
     }
@@ -256,7 +268,9 @@ function dragDropseven(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "seven"){
     this.elementId = 'sevenOutline';
-    this.append(seven);  
+    this.append(seven); 
+    this.classList.remove('grow2');
+    this.classList.add('sevenColor'); 
         }
     }
 }
@@ -273,6 +287,8 @@ function dragDropeight(e){
         if(elementId === "eight"){
     this.elementId = 'eightOutline';
     this.append(eight);  
+    this.classList.remove('grow2');
+    this.classList.add('eightColor');
         }
     }
 }
@@ -288,6 +304,8 @@ function dragDropnine(e){
         if(elementId === "nine"){
     this.elementId = 'nineOutline';
     this.append(nine);  
+    this.classList.remove('grow2');
+    this.classList.add('nineColor');
         }
     }
 }
@@ -302,7 +320,10 @@ function dragDropten(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "ten"){
     this.elementId = 'ten';
-    this.append(ten);  
+    this.append(ten); 
+    this.classList.remove('grow2');
+    this.classList.add('tenColor');
+
         }
     }
 }
