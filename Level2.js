@@ -12,7 +12,7 @@ const triangleOutline = document.getElementById('triangleOutline');
 const starOutline = document.getElementById('starOutline');
 const pentagonOutline = document.getElementById('pentagonOutline');
 
-
+var score = 0;
 
 
 
@@ -112,7 +112,15 @@ function dragDropHeart(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "heart"){
     this.elementId = 'heartOutline';
-    this.append(heart);  
+    this.append(heart); 
+    this.classList.remove('glow')
+    
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }  
 }
@@ -127,7 +135,15 @@ function dragDropCircle(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circle"){
     this.elementId = 'circleOutline';
-    this.append(circle);  
+    this.append(circle);
+    this.classList.remove('glow')
+
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -144,6 +160,14 @@ function dragDropTriangle(e){
         if(elementId === "triangle"){
     this.elementId = 'triangleOutline';
     this.append(triangle);  
+    this.classList.remove('glow')
+
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -159,7 +183,15 @@ function dragDropSquare(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "square"){
     this.elementId = 'squareOutline';
-    this.append(square);  
+    this.append(square); 
+    this.classList.remove('glow')
+
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -175,7 +207,15 @@ function dragDropStar(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "star"){
     this.elementId = 'starOutline';
-    this.append(star);  
+    this.append(star); 
+    this.classList.remove('glow')
+
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    } 
         }
     }
 }
@@ -191,8 +231,15 @@ function dragDropPentagon(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "pentagon"){
     this.elementId = 'pentagonOutline';
-    this.append(pentagon); 
+    this.append(pentagon);
+    this.classList.remove('glow') 
    
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }

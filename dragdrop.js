@@ -14,8 +14,9 @@ const redBlock = document.querySelector('.ColorRed');
 
 var score = 0;
 
-
-youWin();
+//const winningMessageTextElement = document.getElementById('winningMessageText');
+//const winningMessageElement = document.getElementById('winningMessage')
+//const restartButton = document.getElementById('restartButton')
 
 
 //Circle Listeners
@@ -84,6 +85,7 @@ function dragStart(e){
     this.className += ' hold';
     setTimeout(()=>(this.className = 'invisible'),0);
     e.dataTransfer.setData("id", e.target.id);
+    //winningMessageElement.classList.remove('show');
 }
 
 function dragEnd(){
@@ -117,6 +119,14 @@ function dragDrop(e){
     this.className = 'ColorPurple';
     this.append(circlepurple);  
     score++;
+
+    if (score===6){
+        //winningMessageTextElement.innerText="Congratulations! You win!!";
+       // winningMessageElement.classList.add('show');
+        alert("You won the game, congratulations!");
+       console.log(score);
+        }
+
         }
     }  
 }
@@ -131,7 +141,13 @@ function dragDropBlue(e){
         if(elementId === "circleblue"){
     this.className = 'ColorBlue';
     this.append(circleblue);
-    score++;  
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
+
         }
     }
 }
@@ -148,6 +164,12 @@ function dragDropGreen(e){
     this.className = 'ColorGreen';
     this.append(circlegreen);  
     score++;
+
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
+
         }
     }
 }
@@ -163,7 +185,13 @@ function dragDropYellow(e){
         if(elementId === "circleyellow"){
     this.className = 'ColorYellow';
     this.append(circleyellow);
-    score++;  
+    score++; 
+    
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
+
         }
     }
 }
@@ -179,7 +207,14 @@ function dragDropOrange(e){
         if(elementId === "circleorange"){
     this.className = 'ColorOrange';
     this.append(circleorange);
-    score++;  
+    score++; 
+    console.log(score); 
+
+    if (score===6){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
+
         }
     }
 }
@@ -196,15 +231,8 @@ function dragDropRed(e){
     this.className = 'ColorRed';
     this.append(circlered); 
     score++; 
-    console.log(score);
         }
     }
 }
 
-function youWin(){
-    if (score===6){
-    alert("You won the game, congratulations!");
-    console.log(score);
-}
-}
 

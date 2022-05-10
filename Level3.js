@@ -21,7 +21,7 @@ const eightOutline = document.getElementById('eightOutline');
 const nineOutline = document.getElementById('nineOutline');
 const tenOutline = document.getElementById('tenOutline');
 
-
+var score = 0;
 
 
 //number
@@ -163,6 +163,13 @@ function dragDropone(e){
     this.append(one);  
     this.classList.remove('grow2');
     this.classList.add('oneColor');
+
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -181,6 +188,13 @@ function dragDroptwo(e){
     this.append(two);  
     this.classList.remove('grow2');
     this.classList.add('twoColor');
+
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -198,7 +212,14 @@ function dragDropthree(e){
     this.elementId = 'threeOutline';
     this.append(three);
     this.classList.remove('grow2');
-    this.classList.add('threeColor');  
+    this.classList.add('threeColor');
+    
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -216,7 +237,14 @@ function dragDropfour(e){
     this.elementId = 'fourOutline';
     this.append(four); 
     this.classList.remove('grow2');
-    this.classList.add('fourColor'); 
+    this.classList.add('fourColor');
+    
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -234,6 +262,13 @@ function dragDropfive(e){
     this.append(five);  
     this.classList.remove('grow2');
     this.classList.add('fiveColor');
+
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }  
 }
@@ -253,6 +288,13 @@ function dragDropsix(e){
     this.classList.remove('grow2');
     this.classList.add('sixColor');
 
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
+
         }
     }
 }
@@ -271,6 +313,13 @@ function dragDropseven(e){
     this.append(seven); 
     this.classList.remove('grow2');
     this.classList.add('sevenColor'); 
+
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -289,6 +338,13 @@ function dragDropeight(e){
     this.append(eight);  
     this.classList.remove('grow2');
     this.classList.add('eightColor');
+
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -306,6 +362,13 @@ function dragDropnine(e){
     this.append(nine);  
     this.classList.remove('grow2');
     this.classList.add('nineColor');
+
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
         }
     }
 }
@@ -324,9 +387,13 @@ function dragDropten(e){
     this.classList.remove('grow2');
     this.classList.add('tenColor');
 
+    score++; 
+    
+    if (score===10){
+        alert("You won the game, congratulations!");
+        console.log(score);
+    }
+
         }
     }
 }
-
-const dropEvents;
-dropEvents.addEventListener
