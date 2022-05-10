@@ -140,6 +140,7 @@ function dragEnd(){
 
 function dragOver(e){
     e.preventDefault();
+    this.classList.add('grow2');
 }
 
 function dragEnter(e){
@@ -151,6 +152,7 @@ function dragEnter(e){
 //one
 function dragLeaveone(){
     this.elementId = 'oneOutline';
+    this.classList.remove('grow2');
 }
 
 function dragDropone(e){
@@ -166,6 +168,7 @@ function dragDropone(e){
 //two
 function dragLeavetwo(){
     this.elementId = 'twoOutline';
+    this.classList.remove('grow2');
 }
 
 function dragDroptwo(e){
@@ -181,6 +184,7 @@ function dragDroptwo(e){
 //three
 function dragLeavethree(){
     this.elementID = 'three';
+    this.classList.remove('grow2');
 }
 
 function dragDropthree(e){
@@ -196,6 +200,7 @@ function dragDropthree(e){
 //four
 function dragLeavefour(){
     this.elementId = 'fourOutline';
+    this.classList.remove('grow2');
 }
 
 function dragDropfour(e){
@@ -210,6 +215,7 @@ function dragDropfour(e){
 //five
 function dragLeavefive(){
     this.elementId = 'fiveOutline';
+    this.classList.remove('grow2');
 }
 
 function dragDropfive(e){
@@ -225,6 +231,7 @@ function dragDropfive(e){
 //six
 function dragLeavesix(){
     this.elementId = 'sixOutline';
+    this.classList.remove('grow2');
 }
 
 function dragDropsix(e){
@@ -241,6 +248,7 @@ function dragDropsix(e){
 //seven
 function dragLeaveseven(){
     this.elementID = 'seven';
+    this.classList.remove('grow2');
 }
 
 function dragDropseven(e){
@@ -256,6 +264,7 @@ function dragDropseven(e){
 //eigth
 function dragLeaveeight(){
     this.elementID = 'eight';
+    this.classList.remove('grow2');
 }
 
 function dragDropeight(e){
@@ -270,6 +279,7 @@ function dragDropeight(e){
 //nine
 function dragLeavenine(){
     this.elementID = 'nine';
+    this.classList.remove('grow2');
 }
 
 function dragDropnine(e){
@@ -284,6 +294,7 @@ function dragDropnine(e){
 //ten
 function dragLeaveten(){
     this.elementID = 'ten';
+    this.classList.remove('grow2');
 }
 
 function dragDropten(e){
