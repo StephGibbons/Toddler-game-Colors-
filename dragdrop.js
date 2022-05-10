@@ -12,8 +12,10 @@ const yellowBlock = document.querySelector('.ColorYellow');
 const orangeBlock = document.querySelector('.ColorOrange');
 const redBlock = document.querySelector('.ColorRed');
 
+var score = 0;
 
 
+youWin();
 
 
 //Circle Listeners
@@ -114,6 +116,7 @@ function dragDrop(e){
         if(elementId === "circlepurple"){
     this.className = 'ColorPurple';
     this.append(circlepurple);  
+    score++;
         }
     }  
 }
@@ -127,7 +130,8 @@ function dragDropBlue(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circleblue"){
     this.className = 'ColorBlue';
-    this.append(circleblue);  
+    this.append(circleblue);
+    score++;  
         }
     }
 }
@@ -143,6 +147,7 @@ function dragDropGreen(e){
         if(elementId === "circlegreen"){
     this.className = 'ColorGreen';
     this.append(circlegreen);  
+    score++;
         }
     }
 }
@@ -157,7 +162,8 @@ function dragDropYellow(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circleyellow"){
     this.className = 'ColorYellow';
-    this.append(circleyellow);  
+    this.append(circleyellow);
+    score++;  
         }
     }
 }
@@ -172,7 +178,8 @@ function dragDropOrange(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circleorange"){
     this.className = 'ColorOrange';
-    this.append(circleorange);  
+    this.append(circleorange);
+    score++;  
         }
     }
 }
@@ -187,15 +194,17 @@ function dragDropRed(e){
         var elementId = e.dataTransfer.getData("id");
         if(elementId === "circlered"){
     this.className = 'ColorRed';
-    this.append(circlered);  
+    this.append(circlered); 
+    score++; 
+    console.log(score);
         }
     }
 }
 
-
-
-
-
-
-
+function youWin(){
+    if (score===6){
+    alert("You won the game, congratulations!");
+    console.log(score);
+}
+}
 
