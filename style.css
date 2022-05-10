@@ -21,6 +21,11 @@ h1 {
     transform: scale(1.1);
 }
 
+.glow { 
+    border:#f4f81d;
+    border-style: solid;
+}
+
 .invisible{
     display: none;
 }
@@ -169,8 +174,8 @@ h1 {
 }
 
 .shapes{
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 
 }
@@ -178,43 +183,43 @@ h1 {
 
 .levelTwoWrapper .circleOutline{
     background-image: url(Images/CircleOutline.png);
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 }
 
 .levelTwoWrapper .heartOutline{
     background-image: url(Images/HeartOutline.png);
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 }
 
 .levelTwoWrapper .pentagonOutline{
     background-image: url(Images/PentagonOutline.png);
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 }
 
 .levelTwoWrapper .starOutline{
     background-image: url(Images/StarOutline.png);
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 }
 
 .levelTwoWrapper .triangleOutline{
     background-image: url(Images/TriangleOutline.png);
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 }
 
 .levelTwoWrapper .squareOutline{
     background-image: url(Images/SquareOutline.png);
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     margin: 10px;
 }
 

@@ -90,6 +90,8 @@ function dragEnd(){
 
 function dragOver(e){
     e.preventDefault();
+    this.classList.add('glow');
+
 }
 
 function dragEnter(e){
@@ -101,6 +103,8 @@ function dragEnter(e){
 //heart
 function dragLeaveHeart(){
     this.elementId = 'heartOutline';
+    this.classList.remove('glow');
+
 }
 
 function dragDropHeart(e){
@@ -115,6 +119,7 @@ function dragDropHeart(e){
 //circle
 function dragLeaveCircle(){
     this.elementId = 'circleOutline';
+    this.classList.remove('glow');
 }
 
 function dragDropCircle(e){
@@ -130,6 +135,7 @@ function dragDropCircle(e){
 //Triangle
 function dragLeaveTriangle(){
     this.elementId = 'triangleOutline';
+    this.classList.remove('glow');
 }
 
 function dragDropTriangle(e){
@@ -145,6 +151,7 @@ function dragDropTriangle(e){
 //Square
 function dragLeaveSquare(){
     this.elementId = 'squareOutline';
+    this.classList.remove('glow');
 }
 
 function dragDropSquare(e){
@@ -160,6 +167,7 @@ function dragDropSquare(e){
 //Star
 function dragLeaveStar(){
     this.elementID = 'ColorStar';
+    this.classList.remove('glow');
 }
 
 function dragDropStar(e){
@@ -175,6 +183,7 @@ function dragDropStar(e){
 //Pentagon
 function dragLeavePentagon(){
     this.elementId = 'pentagonOutline';
+    this.classList.remove('glow');
 }
 
 function dragDropPentagon(e){
