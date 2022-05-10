@@ -327,3 +327,6 @@ function dragDropten(e){
         }
     }
 }
+
+const dropEvents;
+dropEvents.addEventListener
