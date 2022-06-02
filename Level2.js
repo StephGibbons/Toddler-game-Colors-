@@ -79,6 +79,7 @@ var score = 0;
 
 //Drag Functions
 function dragStart(e){
+    console.log("start");
     this.className += ' hold';
     setTimeout(()=>(this.className = 'invisible'),0);
     e.dataTransfer.setData("id", e.target.id);
